@@ -24,6 +24,9 @@ int main() {
        float area;
        char estado[20];
        float PIB;
+       float densidade = populacao / area;
+       float pib = PIB / populacao; // PIB per capita.
+       
 
        printf ("Digite o nome da cidade:   \n");
        scanf ("%s" ,&nome );
@@ -50,11 +53,27 @@ int main() {
        printf ("Nome da cidade: %s\n", nome);
        printf ("Código da carta: %s\n", codigo);
        printf ("Estado: %s\n", estado);
-       printf ("População: %D\n", populacao);
+       printf ("População: %d\n", populacao);
        printf ("Área: %f\n", area);
        printf ("PIB: %f\n", PIB);
        printf (" Pontos Turísticos: %d\n", pontos);
 
+       //Nível Aventureiro;
 
+       pib = (PIB / populacao);
+       printf("PIB per Capita: %.2f\n", pib); //PIB total dividido pela população. 
+       
+       densidade = (populacao / area);
+       printf("Densidade Populacional: %.2f\n", densidade); // População dividída pela área da cidade.
+    
     return 0;
+
+
+
+
+
+
+
+
 }
+
